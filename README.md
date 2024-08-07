@@ -75,4 +75,18 @@ This notebook investigates the robustness of the coin classification model by ev
 - Apply Grad-CAM to visualize model focus areas on masked images.
 - Draw conclusions about the model's reliance on specific image features.
 
+#### 5. Third Class Evaluation
+
+**Notebook**: `05_Third_Class_Evaluation.ipynb`
+
+**Description**:
+This notebook tests the third largest class using the model trained only on the two largest classes to understand if the third class is similar to one of the largest classes and if its classification is consistent.
+
+**Key Steps**:
+
+- Load the model trained on the two largest classes.
+- Load and preprocess images from the third largest class.
+- Evaluate the model's performance on the third class.
+- Analyze the consistency of the classification results.
+
 ---
