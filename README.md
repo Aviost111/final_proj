@@ -9,12 +9,21 @@ This repository contains a series of Jupyter notebooks designed to analyze coin 
 
 ## Notebooks
 
+0. **Organize Data into Folders**: `00_Organize_Data_To_Folders.ipynb`
 1. **Data Cleaning and Preprocessing**: `01_Data_Cleaning_and_Preprocessing.ipynb`
 2. **CNN Classification for Top Classes**: `02_CNN_Classification_Top_Classes.ipynb`
 3. **Feature Extraction and Grad-CAM**: `03_Feature_Extraction_and_GradCAM.ipynb`
 4. **Masked Coin Image Analysis with Grad-CAM**: `04_Masked_Coin_Image_Analysis_with_GradCAM.ipynb`
+5. **Third Class Evaluation**: `05_Third_Class_Evaluation.ipynb`
 
 ---
+
+### 0. Organize Data into Folders
+
+**Notebook**: `00_Organize_Data_To_Folders.ipynb`
+
+**Description**:
+This notebook organizes the combined coin images into separate folders based on their class labels. It also renames the images to include their class labels.
 
 ### 1. Data Cleaning and Preprocessing
 
@@ -75,18 +84,18 @@ This notebook investigates the robustness of the coin classification model by ev
 - Apply Grad-CAM to visualize model focus areas on masked images.
 - Draw conclusions about the model's reliance on specific image features.
 
-#### 5. Third Class Evaluation
+### 5. Third Class Evaluation
 
 **Notebook**: `05_Third_Class_Evaluation.ipynb`
 
 **Description**:
-This notebook tests the third largest class using the model trained only on the two largest classes to understand if the third class is similar to one of the largest classes and if its classification is consistent.
+In this notebook, we evaluate the robustness of our pre-trained coin classification model by testing it on images from a third class, al-Mahdiyah, which was not part of the original training set. The goal is to understand if the al-Mahdiyah class shares similarities with the two largest classes (Misr and al-Mansuriyah) used in the initial training.
 
 **Key Steps**:
 
-- Load the model trained on the two largest classes.
-- Load and preprocess images from the third largest class.
-- Evaluate the model's performance on the third class.
-- Analyze the consistency of the classification results.
+- Load and preprocess images of the al-Mahdiyah class.
+- Use the pre-trained model to predict the class of al-Mahdiyah images and analyze the classification consistency.
+- Apply Grad-CAM to visualize the regions of the al-Mahdiyah images that the model focuses on when making its predictions.
+- Draw conclusions about the model's reliance on specific image features.
 
 ---
