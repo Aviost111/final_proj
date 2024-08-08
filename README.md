@@ -15,6 +15,7 @@ This repository contains a series of Jupyter notebooks designed to analyze coin 
 3. **Feature Extraction and Grad-CAM**: `03_Feature_Extraction_and_GradCAM.ipynb`
 4. **Masked Coin Image Analysis with Grad-CAM**: `04_Masked_Coin_Image_Analysis_with_GradCAM.ipynb`
 5. **Third Class Evaluation**: `05_Third_Class_Evaluation.ipynb`
+6. **Three Class Model Training and Analysis**: `06_Three_Class_Model_Training_and_Analysis.ipynb`
 
 ---
 
@@ -97,5 +98,23 @@ In this notebook, we evaluate the robustness of our pre-trained coin classificat
 - Use the pre-trained model to predict the class of al-Mahdiyah images and analyze the classification consistency.
 - Apply Grad-CAM to visualize the regions of the al-Mahdiyah images that the model focuses on when making its predictions.
 - Draw conclusions about the model's reliance on specific image features.
+
+### 06. Three Class Model Training and Analysis
+
+**Notebook**: `06_Three_Class_Model_Training_and_Analysis.ipynb`
+
+**Description**:
+In this notebook, we extend our previous work by training a convolutional neural network (CNN) to classify coins from three mints: `al-Mansuriyah`, `Misr`, and `al-Mahdiyah`. We analyze the model's performance and conduct various experiments to understand the importance of different coin regions in classification.
+
+**Key Steps**:
+
+- Organize and preprocess images from the three classes.
+- Split the dataset into training, validation, and test sets.
+- Define and compile a CNN model.
+- Train the model on the three-class dataset.
+- Evaluate the model's performance on the test set.
+- Apply Grad-CAM to visualize important regions in the images.
+- Modify images by masking specific regions and evaluate the model.
+- Use Grad-CAM on modified images to understand feature importance.
 
 ---
